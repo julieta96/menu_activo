@@ -3,14 +3,13 @@ body{
 }
 
 #menu{
-   /* display: block;
-    margin: auto;*/
+    
     background-color: darkkhaki;
     padding: 2px;
 }
 
 #opciones li{
-    display: inline;
+    display: inline-block;
 }
 
 #opciones li a{
@@ -18,4 +17,9 @@ body{
     color: black;
     margin-right: 10px;
     margin-left: 150px;
+}
+
+.active{
+
+    color: #fff;
 }
