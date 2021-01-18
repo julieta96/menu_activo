@@ -3,10 +3,11 @@ body{
 }
 
 #menu{
-    
+
     background-color: darkkhaki;
     padding: 2px;
 }
+
 
 #opciones li{
     display: inline-block;
@@ -14,12 +15,15 @@ body{
 
 #opciones li a{
     text-decoration: none;
-    color: black;
     margin-right: 10px;
     margin-left: 150px;
 }
 
-.active{
+#opciones .active a{
 
     color: #fff;
+}
+
+a{
+    color: #000;
 }
