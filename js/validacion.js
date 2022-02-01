@@ -1,58 +1,78 @@
-const validacionClaseActiva = ()=>{
 
-/*const elementos= document.querySelector("#opciones li a");
-elementos.addEventListener("click", activarClase);*/
-activarClase()
+let pages = $('#opciones li > .page');
 
+const root = ()=>{
 
+	let root= self.location.href;
+	let page = root.substring(0, 37);
+
+	return page;
 }
 
+let idPages="";
 
-function pageHref(){
+pages.click((e)=>{
 
-		var rutaAbsoluta = self.location.href;   
-		var posicionUltimaBarra = rutaAbsoluta.lastIndexOf("/");
-		var rutaRelativa = rutaAbsoluta.substring( posicionUltimaBarra + "/".length , rutaAbsoluta.length );
-		return rutaRelativa;  
-	}
+	 let page= "";
 
+	 idPages= e.target.id;
 
-const activarClase= ()=>{
+	 if(idPages=='index'){
 
-//let i =0;
-const elementoLi=document.querySelector("#opciones li");
-//let URLactual = window. location; //alert(location.href);
+	 	page=root()+idPages+".html";
 
+	 }else{
+	 	page=root()+"pages/"+idPages+".html";
+	 }
 
-	switch(pageHref()){
+	 e.setAttribute('href', page);
 
-		case "index.html":
-		elementoLi.classList.toggle("active");
-		break;
-
-		case "page1.html":
-		elementoLi.classList.toggle("active");
-		break;
-
-		case "page2.html":
-		elementoLi.classList.toggle("active");
-		break;
-
-		case "page3.html":
-		elementoLi.classList.toggle("active");
-		break;
-
-		case "page4.html":
-		elementoLi.classList.toggle("active");
-		break;
-
-
-	}
+	 //alert(page);
+	 
+	 /*$(location).attr("href",`${page}`);*/
+		
 	
+});
 
-}
 
-addEventListener("load", validacionClaseActiva);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
