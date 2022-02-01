@@ -17,6 +17,7 @@ body{
     text-decoration: none;
     margin-right: 10px;
     margin-left: 150px;
+    cursor: pointer;
 }
 
 #opciones .active a{
