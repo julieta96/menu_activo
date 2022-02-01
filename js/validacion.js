@@ -27,11 +27,6 @@ pages.click((e)=>{
 
 	 e.setAttribute('href', page);
 
-	 //alert(page);
-	 
-	 /*$(location).attr("href",`${page}`);*/
-		
-	
 });
 
 
