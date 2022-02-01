@@ -15,8 +15,9 @@ pages.click((e)=>{
 
 	 let page= "";
 
+	 a = $(e.target);
 	 idPages= e.target.id;
-
+	 
 	 if(idPages=='index'){
 
 	 	page=root()+idPages+".html";
@@ -25,7 +26,7 @@ pages.click((e)=>{
 	 	page=root()+"pages/"+idPages+".html";
 	 }
 
-	 e.setAttribute('href', page);
+	 a.attr("href", page);
 
 });
 
