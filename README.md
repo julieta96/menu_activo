@@ -1,4 +1,4 @@
-## EVENTOS
+## Menu Activo
 
 _Mini proyecto frontend, menu activo_
 
