@@ -14,9 +14,10 @@ let idPages="";
 pages.click((e)=>{
 
 	 let page= "";
-
+	 
 	 a = $(e.target);
 	 idPages= e.target.id;
+	 let li = e.currentTarget;
 	 
 	 if(idPages=='index'){
 
@@ -27,8 +28,25 @@ pages.click((e)=>{
 	 }
 
 	 a.attr("href", page);
-
+	 
 });
+
+let li = $("#opciones li");
+
+ li.click((e)=>{
+
+	 let ev= "";
+	 
+	 ev= $(e.target);
+	 ev.siblings().removeClass("active");
+	 ev.addClass("active");
+	 
+});
+
+
+
+
+
 
 
 

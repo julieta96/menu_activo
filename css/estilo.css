@@ -11,6 +11,8 @@ body{
 
 #opciones li{
     display: inline-block;
+    cursor: pointer;
+    text-align:center
 }
 
 #opciones li a{
@@ -27,6 +29,7 @@ body{
 
 a{
     color: #000;
+    text-align: center;
 }
 
 h1{
