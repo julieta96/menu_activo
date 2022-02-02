@@ -13,14 +13,12 @@ const root = ()=>{
 		let posicionCadena = root.indexOf(buscarCadena);
 		page = root.substring( 0 ,posicionCadena+sizeCadena);
 
-	}else{
-
-		let nombreProyecto = "menu_activo";
-		let sizeNombreProyecto = nombreProyecto.length;
-		let posicionNombreProyecto = root.indexOf(nombreProyecto);
-		page = root.substring( 0 ,posicionNombreProyecto+sizeNombreProyecto);
-
 	}
+
+	let nombreProyecto = "menu_activo";
+	let sizeNombreProyecto = nombreProyecto.length;
+	let posicionNombreProyecto = root.indexOf(nombreProyecto);
+	page = root.substring( 0 ,posicionNombreProyecto+sizeNombreProyecto);
 
 	return page;
 }
