@@ -24,8 +24,8 @@ body{
     cursor: pointer;
 }
 
-#opciones .active a{
-
+ .active {
+    
     color: #fff;
     text-decoration: underline;
 }
