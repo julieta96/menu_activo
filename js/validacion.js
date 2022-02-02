@@ -3,8 +3,11 @@ let pages = $('#opciones li > .page');
 
 const root = ()=>{
 
-	let root= self.location.href;
-	let page = root.substring(0, 37);
+	let root = self.location.href;
+	let nombreProyecto = "menu_activo";
+	let sizeNombreProyecto = nombreProyecto.length;
+	let posicionNombreProyecto = root.indexOf(nombreProyecto);
+	let page = root.substring( 0 ,posicionNombreProyecto+sizeNombreProyecto);
 
 	return page;
 }
@@ -20,10 +23,10 @@ pages.click((e)=>{
 	 
 	 if(idPages=='index'){
 
-	 	page=root()+idPages+".html";
+	 	page=root()+"/"+idPages+".html";
 
 	 }else{
-	 	page=root()+"pages/"+idPages+".html";
+	 	page=root()+"/pages/"+idPages+".html";
 	 }
 
 	 a.attr("href", page);
