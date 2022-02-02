@@ -9,15 +9,14 @@ const root = ()=>{
 	return page;
 }
 
-let idPages="";
-
 pages.click((e)=>{
 
 	 let page= "";
-	 
-	 a = $(e.target);
+	 let idPages="";
+	 let a = $(e.target);
+	 let li = a.parent();
+
 	 idPages= e.target.id;
-	 let li = e.currentTarget;
 	 
 	 if(idPages=='index'){
 
@@ -28,20 +27,12 @@ pages.click((e)=>{
 	 }
 
 	 a.attr("href", page);
-	 
+	 li.toggleClass('active');
 });
 
-let li = $("#opciones li");
 
- li.click((e)=>{
 
-	 let ev= "";
-	 
-	 ev= $(e.target);
-	 ev.siblings().removeClass("active");
-	 ev.addClass("active");
-	 
-});
+
 
 
 
