@@ -28,18 +28,17 @@ const root = ()=>{
 pages.click((e)=>{
 
 	 let page= "";
-	 let idPages="";
 	 let a = $(e.target);
 	 let li = a.parent();
 
-	 idPages= e.target.id;
+	 let idPage= e.target.id;
 	 
-	 if(idPages=='index'){
+	 if(idPage=='index'){
 
-	 	page=root()+"/"+idPages+".html";
+	 	page=root()+"/"+idPage+".html";
 
 	 }else{
-	 	page=root()+"/pages/"+idPages+".html";
+	 	page=root()+"/pages/"+idPage+".html";
 	 }
 
 	 a.attr("href", page);
