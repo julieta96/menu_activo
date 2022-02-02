@@ -6,7 +6,7 @@ const root = ()=>{
 	let root = self.location.href;
 	let page ="";
 
-	if(root.include("https://site-menu-activo.netlify.app/")){
+	if(root.includes("https://site-menu-activo.netlify.app/")){
 
 		let buscarCadena = "app";
 		let sizeCadena = buscarCadena.length;
