@@ -8,7 +8,7 @@ const root = ()=>{
 
 	if(root=="https://site-menu-activo.netlify.app/"){
 
-		let buscarCadena = ".app/";
+		let buscarCadena = "app";
 		let sizeCadena = buscarCadena.length;
 		let posicionCadena = root.indexOf(buscarCadena);
 		page = root.substring( 0 ,posicionCadena+sizeCadena);
