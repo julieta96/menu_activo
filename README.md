@@ -10,6 +10,7 @@ _Lenguajes y librerias_
 * CSS
 * JAVASCRIPT
 * JQUERY
+* requireJS
 
 ## SITE 🗺️
 
